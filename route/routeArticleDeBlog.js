@@ -1,3 +1,6 @@
+import express from 'express';
+import { getAllArticles, getArticleById, createArticle, updateArticle, deleteArticle } from '../controllers/articleDeBlogController.js';
+
 // routes/articles.js
 const express = require('express');
 const router = express.Router();
@@ -19,3 +22,5 @@ router.put('/articles/:id', ArticleController.updateArticle);
 router.delete('/articles/:id', ArticleController.deleteArticle);
 
 module.exports = router;
+
+export default router;

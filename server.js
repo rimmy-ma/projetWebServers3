@@ -1,6 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import mongoose from 'mongoose';
+import './mongoose.js';  // Importing Mongoose configuration
 
 // Importation des routes avec la syntaxe ES6
 import articleRoutes from './routes/routeArticleDeBlog.js';
@@ -11,11 +11,6 @@ import roleRoutes from './routes/routeRole.js';
 import userRoutes from './routes/routeUtilisateurs.js';
 
 const app = express();
-
-// Connexion à MongoDB
-mongoose.connect('mongodb://localhost:27017/projetWebServer', { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log('Connecté à MongoDB: projetWebServer'))
-    .catch(err => console.error('Impossible de se connecter à MongoDB', err));
 
 // Middlewares
 app.use(bodyParser.json());

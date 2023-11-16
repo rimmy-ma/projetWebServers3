@@ -4,7 +4,7 @@ const db = require('../models');
 const Utilisateur = db.utilisateurs;
 const { verifyToken, isAdmin } = require('../models/auth'); // Importez les fonctions de middleware d'authentification
 
-const secret = process.env.JWT_SECRET || 'votre_secret_ici';
+const secret = process.env.JWT_SECRET || 'votre_secret_ici'; //aucun pour le moment
 
 // Contrôleur pour l'inscription d'un nouvel utilisateur
 exports.signup = (req, res) => {

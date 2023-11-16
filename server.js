@@ -1,14 +1,14 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+import express from 'express';
+import bodyParser from 'body-parser';
+import mongoose from 'mongoose';
 
-// Importation des routes
-const articleRoutes = require('./routes/routeArticleDeBlog');
-const commentRoutes = require('./routes/routeCommentaire');
-const eventRoutes = require('./routes/routeEvenements');
-const reservationRoutes = require('./routes/routeReservations');
-const roleRoutes = require('./routes/routeRole');
-const userRoutes = require('./routes/routeUtilisateurs');
+// Importation des routes avec la syntaxe ES6
+import articleRoutes from './routes/routeArticleDeBlog.js';
+import commentRoutes from './routes/routeCommentaire.js';
+import eventRoutes from './routes/routeEvenements.js';
+import reservationRoutes from './routes/routeReservations.js';
+import roleRoutes from './routes/routeRole.js';
+import userRoutes from './routes/routeUtilisateurs.js';
 
 const app = express();
 
@@ -40,4 +40,4 @@ app.listen(port, () => {
     console.log(`Serveur en cours d'exécution sur le port ${port}`);
 });
 
-module.exports = app;
+export default app;

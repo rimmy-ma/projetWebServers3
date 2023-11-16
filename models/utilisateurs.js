@@ -1,6 +1,6 @@
-// models/Utilisateur.js
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config');
+const Role = require('./Role'); // Importez le modèle Role pour établir une association
 
 const Utilisateur = sequelize.define('Utilisateur', {
   nom: DataTypes.STRING,
@@ -15,4 +15,4 @@ const Utilisateur = sequelize.define('Utilisateur', {
 // Associez le modèle Utilisateur avec le modèle Role s'il y a une relation.
 Utilisateur.belongsTo(Role, { foreignKey: 'roleId' });
 
-module.exports = Utilisateur;   
+module.exports = Utilisateur;

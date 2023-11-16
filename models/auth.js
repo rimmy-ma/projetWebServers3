@@ -1,6 +1,6 @@
 // middleware/auth.js
 const jwt = require('jsonwebtoken');
-const db = require('../models'); // Assurez-vous que ce chemin est correct.
+const db = require('../models'); // chemin de la base de donnees
 const Utilisateur = db.utilisateurs;
 
 const secret = process.env.JWT_SECRET || 'votre_secret_ici'; // Vous devriez stocker cela dans une variable d'environnement.

@@ -1,6 +1,6 @@
 const { DataTypes, Model } = require('sequelize');
 const sequelize = require('../config/database');
-const Utilisateur = require('./Utilisateur'); // Importez le modèle de la table des utilisateurs si nécessaire
+const Utilisateur = require('./Utilisateur'); //import de la table d'utilisateurs
 
 class Evenement extends Model {}
 
@@ -19,7 +19,7 @@ Evenement.init({
     allowNull: false,
   },
   descriptionEvenement: {
-    type: DataTypes.TEXT, // Utilisez TEXT pour la description de l'événement
+    type: DataTypes.TEXT, //en format de texte
     allowNull: false,
   },
   placesDisponibles: {
@@ -41,7 +41,7 @@ Evenement.init({
 }, {
   sequelize,
   modelName: 'Evenement',
-  timestamps: false, // Si vous ne souhaitez pas utiliser les timestamps (created_at, updated_at)
+  timestamps: false, 
 });
 
 module.exports = Evenement;

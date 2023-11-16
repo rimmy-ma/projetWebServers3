@@ -1,7 +1,7 @@
 // routes/utilisateurs.js
 const express = require('express');
 const router = express.Router();
-const UtilisateurController = require('../controllers/UtilisateurController');
+const UtilisateurController = require('../controllers/utilisateurController');
 
 // Routes pour les utilisateurs
 router.get('/utilisateurs', UtilisateurController.getAllUtilisateurs);

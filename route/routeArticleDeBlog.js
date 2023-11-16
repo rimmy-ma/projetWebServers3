@@ -1,7 +1,7 @@
 // routes/articles.js
 const express = require('express');
 const router = express.Router();
-const ArticleController = require('../controllers/ArticleController');
+const ArticleController = require('../controllers/articleDeBlogController');
 
 // Créer un nouvel article de blog
 router.post('/articles', ArticleController.createArticle);

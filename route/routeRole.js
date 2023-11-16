@@ -1,7 +1,7 @@
 // routes/roles.js
 const express = require('express');
 const router = express.Router();
-const RoleController = require('../controllers/RoleController');
+const RoleController = require('../controllers/roleController');
 
 // Créer un nouveau rôle
 router.post('/roles', RoleController.createRole);

@@ -1,0 +1,61 @@
+/* loginStyle.css */
+
+/* Login Page Styles */
+.login-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: #e0fbfc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #005f73; /* Dark blue */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Dark gray */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0077b6; /* Blue color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #023e8a; /* Darker shade for hover effect */
+}
+
+.return-link {
+    display: block;
+    margin-top: 15px;
+    color: #0077b6; /* Blue color for the link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.return-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}

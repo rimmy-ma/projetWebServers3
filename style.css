@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Bleu clair, représentant l'hiver */
+    color: #333;
+}
+.header {
+    background-color: #005f73; /* Bleu foncé pour le contraste */
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+.menu-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #94d2bd; /* Vert-bleu clair, ajoute une touche de luminosité */
+    padding: 10px 0;
+}
+.menu-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.content {
+    margin: 15px;
+    padding: 20px;
+    background-color: #e0fbfc; /* Bleu très clair, subtil et agréable */
+}
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.widget {
+    margin-top: 20px;
+}
+.widget-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media (max-width: 600px) {
+    .menu-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
